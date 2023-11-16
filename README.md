@@ -4,7 +4,9 @@
 ### Stacks
 
 - [ ] React + Vite </br>
-- [ ] SWR </br>
+- [ ] [SWR](https://swr.vercel.app/ko) </br>
+- [ ] [TailwindCSS](https://tailwindcss.com/) </br>
+- [ ] [DaisyUi](https://daisyui.com/) </br>
 - [ ] Axios
 
 ### Pages 
