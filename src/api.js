@@ -10,7 +10,7 @@ const api = axios.create({
   params: {
     ServiceKey: ApiKey,
     pageNo:1,
-    numOfRows:10,
+    numOfRows:20,
     resultType:"json"
   },
 });

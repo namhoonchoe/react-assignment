@@ -4,6 +4,6 @@
 
 @layer components {
   .presenter-grid {
-    @apply w-full grid grid-cols-auto-fill-card gap-5 justify-items-center;
+    @apply w-full grid grid-cols-auto-fill-card gap-x-10 gap-y-16 justify-items-center;
   }
 }

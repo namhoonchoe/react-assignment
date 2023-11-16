@@ -1,35 +1,37 @@
-import React from 'react';
+import React from "react";
 import useSWR from "swr";
 import api from "../../api";
+import AccomodationPresenter from "./AccomodationPresenter";
 
 function AccomodatonContainer() {
   const getGmgAccomodationInfo = async (url) => {
     const {
-      data:{
-        getgmghotelinfo :{
-          body :{
-            items :{
-              item
-            }
-          }
-        }
-      }  
+      data: {
+        getgmghotelinfo: {
+          body: {
+            items: { item },
+          },
+        },
+      },
     } = await api.get(url);
-    console.log(item)
+    console.log(item);
     return item;
-    
   };
 
   const {
-    data: HotellistData,
+    data: hotellistData,
     isLoading,
     error,
   } = useSWR("getgmghotelinfo", getGmgAccomodationInfo, {
     refreshInterval: 360000,
   });
   return (
-    <div>AccomodatonContainer</div>
-  )
+    <AccomodationPresenter
+      accomodationListData={hotellistData}
+      isLoading={isLoading}
+      error={error}
+    />
+  );
 }
 
-export default AccomodatonContainer
+export default AccomodatonContainer;
