@@ -8,6 +8,10 @@ export default {
       daisyui: {
         themes: ["light", "dark", "cupcake"],
       },
+      gridTemplateColumns: {
+        'auto-fill-card': 'repeat(auto-fill, minmax(384px, 1fr))',
+        
+      },
     },
   },
   plugins: [daisyui],

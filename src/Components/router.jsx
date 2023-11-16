@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import Accomodation from "../Pages/Accomodation";
 import Detail from "../Pages/Detail";
 import Home from "../Pages/Home";
 import Matzip from "../Pages/Matzip";
@@ -16,7 +17,7 @@ const RootRouter = createBrowserRouter([
         children: [
           { path: "", element: <Place /> },
           { path: "foods", element: <Matzip /> },
-          { path: "accomodation", element: <Place /> },
+          { path: "accomodation", element: <Accomodation /> },
         ],
       },
       {

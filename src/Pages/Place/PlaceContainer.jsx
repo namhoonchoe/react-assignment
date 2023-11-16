@@ -8,7 +8,9 @@ function PlaceContainer() {
       data: {
         getgmgtourinfo: {
           body: {
-            items: { item },
+            items:{
+              item
+            } 
           },
         },
       },

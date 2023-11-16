@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .presenter-grid {
+    @apply w-full grid grid-cols-auto-fill-card gap-5 justify-items-center;
+  }
+}
